@@ -86,6 +86,6 @@ else:
 python auto_login_bot.py
 ```
 # 🔹 Step 6: Get the Output
-After the script runs, you’ll find:
-successful_logins.xlsx file in the same folder.
-It will contain only the emails that logged in successfully.
+1. After the script runs, you’ll find:
+2. successful_logins.xlsx file in the same folder.
+3. It will contain only the emails that logged in successfully.
