@@ -7,9 +7,11 @@ pip install selenium pandas openpyxl
 # 🔹 Step 2: Prepare Your Excel File
 Create a file named credentials.xlsx with the following structure:
 
-Email	                       Password
-user1@example.com	            pass123
-user2@example.com           	secret456
+| Email               | Password  |
+|---------------------|-----------|
+| user1@example.com   | pass123   |
+| user2@example.com   | secret456 |
+
 
 Save it in the same folder as your Python script.
 
