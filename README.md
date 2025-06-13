@@ -13,6 +13,7 @@ Create a file named credentials.xlsx with the following structure:
 | user2@example.com   | secret456 |
 
 
+
 Save it in the same folder as your Python script.
 
 # 🔹 Step 3: Download ChromeDriver
